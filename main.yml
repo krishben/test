@@ -10,3 +10,9 @@ jobs:
         with:
           name: file
           path: file.txt
+    steps:
+      - run: echo "Hello World" > file.txt
+      - uses: actions/upload-artifact@v1
+        with:
+          name: file
+          path: file.txt
